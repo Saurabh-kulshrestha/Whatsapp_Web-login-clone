@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="icon" href="./img/w.png">
+    <style>
+        #outer{
+            width: 100%;
+            height: 560px;
+            /* background-color: aqua; */
+        }
+        #background{
+            width: 100%;
+            height: 200px ;
+            background-color: rgb(0,168,132);
+        }
+        #background-name{
+            width: 80%;
+            height: 90px;
+            /* background-color: aquamarine; */
+            margin: auto;
+            display: flex;
+        }
+        #form{
+            width: 80%;
+            height: 470px;
+            margin: auto;
+            box-shadow: 
+                -5px 0 10px rgba(0, 0, 0, 0.2),  /* Left shadow */
+                5px 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #logo-name{
+            height: 60px;
+            width: 200px;
+            /* background-color: blue; */
+            margin: auto 0px;
+            display: flex;
+        }
+        #logo-name>img{
+            height: 45px;
+            width: 45px;
+        }
+        #logo-name>p{
+            color: white;
+            font-family: Sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+        #download{
+            width: 100%;
+            height: 140px;
+            background-color: white;
+            padding-top: 40px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            border: 1px solid silver;
+        }
+        .icon img {
+            width: 60px;
+            height: 50px;
+        }
+        .content {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .content h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 200;
+            color: #333;
+            font-family: Sans-serif ;
+        }
+        .content p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+            font-family: Sans-serif ;
+        }
+        .download-button {
+            background-color: #03792e;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #026524;
+        }
+        #qr-content{
+            width: 100%;
+            height: 290px;
+            /* background-color: greenyellow; */
+        }
+        
+        #content p{
+            font-family: sans-serif;
+            margin: 0;
+            font-size: 30px;
+            color: #333;
+            padding-left: 30px;
+            padding-bottom: 60px;
+            font-weight: 100px;
+        }
+        #content li{
+            padding-bottom: 15px;
+        }
+        #content ol{
+            padding-left: 55px;
+            font-size: 18px;
+            color: #333;
+            font-family: sans-serif;
+        }
+        #content{
+            width: 70%;
+            height: 290px;
+            float: left;
+            /* background-color: brown; */
+        }
+        #qr-box{
+            width: 30%;
+            height: 290px;
+            float: left;
+            /* background-color: blueviolet; */
+        }
+        .qr-code{
+            height: 240px;
+            width: 70%;
+            /* background-color: #333; */
+            margin: 20px auto;
+        }
+        .qr-code img{
+            height: 250px;
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="background">
+            <div id="background-name">
+                <div id="logo-name">
+                    <img src="./img/w.png" alt="">
+                    <p>WHATSAPP WEB</p>
+                </div>
+            </div>
+            <!-- form section start -->
+            <div id="form">
+                <!-- download section start -->
+                <div id="download">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="./img/w-l.png" alt="WhatsApp">
+                        </div>
+                        <div class="content">
+                            <h3>Download WhatsApp for Windows</h3>
+                            <p>Get calling, screen sharing, and a faster experience with the new Windows app.</p>
+                        </div>
+                        <button class="download-button">Get the app</button>
+                    </div>
+                </div>
+                <!-- download section end -->
+                <!--qr and content section start  -->
+                <div id="qr-content">
+                    <div id="content">
+                        <p>Use WhatsApp on your computer</p>
+                        <ol>
+                            <li>Open WhatsApp on your phone</li>
+                            <li>Tap <b>Menu</b> ⫶ on Android, or <b>Settings</b> ⚙️ on iPhone</li>
+                            <li>Tap <b>Linked devices</b> and then <b>Link a device</b> </li>
+                            <li>Point your phone at this screen to capture the QR code</li>
+                        </ol>
+                    </div>
+                    <div id="qr-box">
+                        <div class="qr-code">
+                            <img src="./img/qr.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- qr and content section end -->
+            </div>
+            <!-- form section end -->
+        </div>
+    </div>
+</body>
+</html>
